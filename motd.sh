@@ -13,7 +13,8 @@ cyan=$(echo -e "\033[1;36m")
 RESOURCE_PATH=~/motd
 
 ## Banner
-"$RESOURCE_PATH"/modules/banners/echo_debian.sh
+#"$RESOURCE_PATH"/modules/banners/debian.sh
+#linuxlogo -l
 
 ## System
 "$RESOURCE_PATH"/modules/system_version.sh
