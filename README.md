@@ -46,5 +46,5 @@ Remove files in
 
 and remove the line starting the `motd.sh` script at the end of the appropriate start 
 script.
-    - `~/.bashrc` (local user)
-    - `/etc/profile` (system wide)
+- `~/.bashrc` (local user)
+- `/etc/profile` (system wide)
