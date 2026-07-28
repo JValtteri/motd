@@ -12,7 +12,7 @@ cyan=$(echo -e "\033[1;36m")
 
 RESOURCE_PATH=~/motd
 
-## Banner
+## Banner (requires installing "linuxlogo" )
 #"$RESOURCE_PATH"/modules/banners/debian.sh
 #linuxlogo -l
 
@@ -30,7 +30,9 @@ RESOURCE_PATH=~/motd
 #"$RESOURCE_PATH"/modules/containers.sh
 
 ## Disk
-"$RESOURCE_PATH"/modules/disk.sh
+## (The script accepts a parameter pointing to the disc you are interested in.
+## (Remove it to show all volumes)
+"$RESOURCE_PATH"/modules/disk.sh /
 
 ## Uptime and load
 "$RESOURCE_PATH"/modules/uptime.sh

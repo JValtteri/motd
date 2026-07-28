@@ -8,4 +8,4 @@ cyan=$(echo -e "\033[1;36m")
 RESOURCE_PATH=~/motd/modules/
 
 echo "${green}Disk:${yellow}"
-df -h / | "$RESOURCE_PATH"/indent.sh
+df -h $1 | "$RESOURCE_PATH"/indent.sh
