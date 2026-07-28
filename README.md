@@ -4,6 +4,7 @@ The motd script can print useful information on login, about your computers stat
 -- such as current IP and operating system and Kernel version, Disk space, service 
 status, running Docker containers and fancy ASCII logo.
 
+![screenshot](screenshot.png)
 
 ## Automatic setup (recommended)
 
