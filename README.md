@@ -17,7 +17,8 @@ echo "~/motd/motd.sh" >> ~/.bashrc
 
 ## Setup (system wide) (*broken*)
 
-**Current setup script for system wide install is unreliable. If you are somewhat tech savvy, see `setup.sh` script and you'll likely understand what needs to be done.**
+**Current setup script for system wide install is unreliable. If you are somewhat 
+tech savvy, see `setup.sh` script and you'll likely understand what needs to be done.**
 
 ```
 git clone https://github.com/JValtteri/soc-calc.git
@@ -39,9 +40,25 @@ in either of the following locations:
 
 #### Banners and titles
 
+##### `linuxlogo`
+
 The script can use the `linuxlogo` command to print out a distribution specific logo, 
 if enabled int the script. Using it requires enabling it in script and installing the 
 `linuxlogo` program through `apt` or your app repository.
+
+##### `figlet`
+
+You may use `figlet` to create custom ASCII-art banner texts. This requires 
+installing `figlet` separately. It's available through your distributions app repository.
+
+##### Pre-made static banners
+
+The script includes pre-made banners in `motd/modules/banners/` directory. You may 
+enable one by un-commenting the appropriate line and adding the correct script name. 
+See the directory for available banner scripts. 
+
+You may make your own banners too. The pre-made banners were created using 
+text-to-ascii generator at: https://www.asciiart.eu/text-to-ascii-art
 
 ### Removing the script
 
