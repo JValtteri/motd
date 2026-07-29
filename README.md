@@ -6,17 +6,24 @@ status, running Docker containers, and a fancy ASCII logo, if you so choose.
 
 ![screenshot](screenshot.png)
 
-## Automatic setup (recommended)
+## Setup (for local user) (recommended)
 
-### Run the `setup.sh` script
+Clone the repository and add the script to `.bashrc`:
 
-The setup script
-- automatically copies the files to the correct location on disk. 
-    - `~/motd/motd.sh`
-    - `/etc/motd-script/motd.sh`
-- adds the script to appropriate startup script
-    - `~/.bashrc` for local user or
-    - `/etc/profile` for system wide instal
+```
+git clone https://github.com/JValtteri/soc-calc.git
+echo "~/motd/motd.sh" >> ~/.bashrc
+```
+
+## Setup (system wide) (*broken*)
+
+**Current setup script for system wide install is unreliable. If you are somewhat tech savvy, see `setup.sh` script and you'll likely understand what needs to be done.**
+
+```
+git clone https://github.com/JValtteri/soc-calc.git
+cd motd
+./setup.sh
+```
 
 ### Customize the script (Optional)
 
