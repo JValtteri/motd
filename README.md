@@ -1,8 +1,8 @@
 # Terminal Login MOTD Customization
 
-The motd script can print useful information on login, about your computers status 
--- such as current IP and operating system and Kernel version, Disk space, service 
-status, running Docker containers and fancy ASCII logo.
+The motd script can print useful information on login about your computers status 
+-- such as current IP, operating system, Kernel version, Disk space, service 
+status, running Docker containers, and a fancy ASCII logo, if you so choose.
 
 ![screenshot](screenshot.png)
 
