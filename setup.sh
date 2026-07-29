@@ -2,7 +2,7 @@
 
 echo "Do you want to"
 echo "1) Install MOTD for Local user only (recommended)"
-echo "2) Install MOTD system wide (requires sudo)"
+#echo "2) Install MOTD system wide (requires sudo)"
 echo "Q) Cancel"
 echo -e -n "\n>"
 read choise
@@ -31,7 +31,7 @@ elif [ "$choise" == "2" ]; then
         echo "Please run the script with sudo"
     fi
 else
-    echo "Cancelling"
+    echo "Cancelled"
     exit
 fi
 
