@@ -12,9 +12,14 @@ cyan=$(echo -e "\033[1;36m")
 
 RESOURCE_PATH=~/motd
 
-## Banner (requires installing "linuxlogo" )
+### Banners
+## Some static banners are included
+## Automatic distribution based banner requires installing "linuxlogo"
+## Custom ASCII art banner text requires installing "figlet"
+##
 #"$RESOURCE_PATH"/modules/banners/debian.sh
 #linuxlogo -l
+#echo -n "${yellow}" && figlet "insert custom computer banner text"
 
 ## System
 "$RESOURCE_PATH"/modules/system_version.sh
