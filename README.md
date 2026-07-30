@@ -1,10 +1,18 @@
 # Terminal Login MOTD Customization
 
-The motd script can print useful information on login about your computers status 
--- such as current IP, operating system, Kernel version, Disk space, service 
+The motd script can print useful information on login about your computers status
+-- such as current IP, operating system, Kernel version, Disk space, service
 status, running Docker containers, and a fancy ASCII logo, if you so choose.
 
 ![screenshot](screenshot-default.png)
+
+## Index
+
+- [Setup](#setup)
+- [Customizing the script (Optional)](#customizing-the-script-optional)
+    - [Modules](#modules)
+    - [Banners and titles](#banners-and-titles)
+- [Removing the script](#removing-the-script)
 
 ## Setup
 
@@ -15,39 +23,42 @@ cd motd
 ./setup.sh
 ```
 
-## Customize the script (Optional)
+## Customizing the script (Optional)
 
-Depending on whether you chose local user or system wide install, the script is located 
+Depending on whether you chose local user or system wide install, the script is located
 in either of the following locations:
 
 - `~/motd/motd.sh`
 - `/etc/motd-script/motd.sh`
 
-You can customize the script in following ways:
+### Modules
 
-- You can comment out the modules you don't want and uncomment the ones you want.
-- You can reorder the modules in the script to change the order in which they appear. 
+The script is split into self contained modules.
+
+You can customize `motd.sh` script by:
+- commenting out the modules you don't want and uncommenting the ones you want.
+- re-ordering the modules in the script to change the order in which they appear.
 
 ### Banners and titles
 
 #### Pre-made static banners
 
-The script includes pre-made banners in `motd/modules/banners/` directory. You may 
-enable one by un-commenting the appropriate line and adding the correct script name. 
-See the directory for available banner scripts. 
+The script includes pre-made banners in `motd/modules/banners/` directory. You may
+enable one by un-commenting the appropriate line and adding the correct script name.
+See the directory for available banner scripts.
 
-You may make your own banners too. The pre-made banners were created using 
+You may make your own banners too. The pre-made banners were created using
 text-to-ascii generator at: https://www.asciiart.eu/text-to-ascii-art
 
 #### `linuxlogo`
 
-The script can use the `linuxlogo` command to print out a distribution specific logo, 
-if enabled int the script. Using it requires enabling it in script and installing the 
+The script can use the `linuxlogo` command to print out a distribution specific logo,
+if enabled int the script. Using it requires enabling it in script and installing the
 `linuxlogo` program through `apt` or your app repository.
 
 #### `figlet`
 
-You may use `figlet` to create custom ASCII-art banner texts. This requires 
+You may use `figlet` to create custom ASCII-art banner texts. This requires
 installing `figlet` separately. It's available through your distributions app repository.
 
 ## Removing the script
@@ -58,7 +69,7 @@ Remove files in
 - `~/motd/motd.sh` (local user)
 - `/etc/motd-script/motd.sh` (system wide)
 
-and remove the lines created at the end of the appropriate start 
+and remove the lines created at the end of the appropriate start
 script.
 - `~/.bashrc` (local user)
 - `/etc/profile` (system wide)
