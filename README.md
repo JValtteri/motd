@@ -16,10 +16,7 @@ git clone https://github.com/JValtteri/motd.git
 echo "~/motd/motd.sh" >> ~/.bashrc
 ```
 
-## Setup (system wide) (*broken*)
-
-**Current setup script for system wide install is unreliable. If you are somewhat 
-tech savvy, see `setup.sh` script and you'll likely understand what needs to be done.**
+## Setup (system wide)
 
 ```
 cd ~
