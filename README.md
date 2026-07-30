@@ -37,8 +37,8 @@ in either of the following locations:
 - `/etc/motd-script/motd.sh`
 
 
-- You can reorder the components in the script according to your preference. 
-- You can comment out the modules you don't need and enable the ones you want.
+You can reorder the components in the script according to your preference. 
+You can comment out the modules you don't need and enable the ones you want.
 
 #### Banners and titles
 
