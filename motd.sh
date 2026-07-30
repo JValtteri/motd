@@ -1,3 +1,4 @@
+
 #!/bin/bash
 no_color=$(echo -e "\033[0m")
 yellow=$(echo -e "\033[1;33m")
@@ -10,37 +11,37 @@ cyan=$(echo -e "\033[1;36m")
 ## Add this line to the end of .bashrc file:
 ## ~/motd/motd.sh
 
-RESOURCE_PATH=~/motd
+#MOTD_PATH=~/motd
 
 ### Banners
 ## Some static banners are included
 ## Automatic distribution based banner requires installing "linuxlogo"
 ## Custom ASCII art banner text requires installing "figlet"
 ##
-#"$RESOURCE_PATH"/modules/banners/debian.sh
+#"$MOTD_PATH"/modules/banners/debian.sh
 #linuxlogo -l
 #echo -n "${yellow}" && figlet "insert custom computer banner text"
 
 ## System
-"$RESOURCE_PATH"/modules/system_version.sh
+"$MOTD_PATH"/modules/system_version.sh
 
 ## Services (requires root)
-#"$RESOURCE_PATH"/modules/services.sh
+#"$MOTD_PATH"/modules/services.sh
 
 ## Network
-"$RESOURCE_PATH"/modules/network_addr.sh
-#"$RESOURCE_PATH"/modules/network_ifconf.sh
+"$MOTD_PATH"/modules/network_addr.sh
+#"$MOTD_PATH"/modules/network_ifconf.sh
 
 ## Containers (requires docker and docker permissions)
-#"$RESOURCE_PATH"/modules/containers.sh
+#"$MOTD_PATH"/modules/containers.sh
 
 ## Disk
 ## (The script accepts a parameter pointing to the disc you are interested in.
 ## (Remove it to show all volumes)
-"$RESOURCE_PATH"/modules/disk.sh /
+"$MOTD_PATH"/modules/disk.sh /
 
 ## Uptime and load
-"$RESOURCE_PATH"/modules/uptime.sh
+"$MOTD_PATH"/modules/uptime.sh
 
 ## Cleanup styling
 echo "${no_color}"
