@@ -11,7 +11,8 @@ status, running Docker containers, and a fancy ASCII logo, if you so choose.
 Clone the repository and add the script to `.bashrc`:
 
 ```
-git clone https://github.com/JValtteri/soc-calc.git
+cd ~
+git clone https://github.com/JValtteri/motd.git
 echo "~/motd/motd.sh" >> ~/.bashrc
 ```
 
@@ -21,14 +22,15 @@ echo "~/motd/motd.sh" >> ~/.bashrc
 tech savvy, see `setup.sh` script and you'll likely understand what needs to be done.**
 
 ```
-git clone https://github.com/JValtteri/soc-calc.git
+cd ~
+git clone https://github.com/JValtteri/motd.git
 cd motd
 ./setup.sh
 ```
 
 ### Customize the script (Optional)
 
-Depending on whether you chose local user or system wide instal, the script is located 
+Depending on whether you chose local user or system wide install, the script is located 
 in either of the following locations:
 
 - `~/motd/motd.sh`
@@ -36,7 +38,7 @@ in either of the following locations:
 
 
 - You can reorder the components in the script according to your preference. 
-- You can comment out the modules you don't need and anable the ones you want.
+- You can comment out the modules you don't need and enable the ones you want.
 
 #### Banners and titles
 
