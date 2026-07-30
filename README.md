@@ -13,7 +13,8 @@ Clone the repository and add the script to `.bashrc`:
 ```
 cd ~
 git clone https://github.com/JValtteri/motd.git
-echo "~/motd/motd.sh" >> ~/.bashrc
+cd motd
+./setup.sh
 ```
 
 ## Setup (system wide)
