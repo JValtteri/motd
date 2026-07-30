@@ -38,7 +38,11 @@ cyan=$(echo -e "\033[1;36m")
 ## Disk
 ## (The script accepts a parameter pointing to the disc you are interested in.
 ## (Remove it to show all volumes)
-"$MOTD_PATH"/modules/disk.sh /
+## To show only specific volumes, add a line for each.
+## The first line should have a second parameter. 
+## The content of the second parameter doesn't matter. Only its existance is checked. 
+"$MOTD_PATH"/modules/disk.sh / main
+#"$MOTD_PATH"/modules/disk.sh /mnt/games
 
 ## Uptime and load
 "$MOTD_PATH"/modules/uptime.sh

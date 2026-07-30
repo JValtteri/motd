@@ -7,5 +7,10 @@ cyan=$(echo -e "\033[1;36m")
 
 #MOTD_PATH=~/motd
 
-echo "${green}Disk:${yellow}"
-df -h $1 | "$MOTD_PATH"/modules/indent.sh
+
+if [ -z "$2" ]; then
+    df -h $1 | "$MOTD_PATH"/modules/indent.sh | grep $1
+else
+    echo "${green}Disk:${yellow}"
+    df -h $1 | "$MOTD_PATH"/modules/indent.sh
+fi
