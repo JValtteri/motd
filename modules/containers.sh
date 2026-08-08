@@ -8,4 +8,4 @@ cyan=$(echo -e "\033[1;36m")
 #MOTD_PATH=~/motd
 
 echo "${green}Containers:${yellow}"
-docker ps --format="table {{.Image}}\t{{.RunningFor}}\t{{.Status}}\t{{.Size}}\t{{.Names}}" | "$MOTD_PATH"/modules/indent.sh
+docker ps --format="table {{.Names}}\t{{.RunningFor}}\t{{.Status}}\t{{.Size}}\t{{.Image}}" | "$MOTD_PATH"/modules/indent.sh
